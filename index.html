@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>JAGADEESH.cliks | Visual Stories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="JAGADEESH.cliks — premium photography, reel creation and creative editing. Book your shoot today.">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home"><b>J<span>.</span></b> JAGADEESH<span class="gold">.cliks</span></a>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <nav class="nav-links"><a href="#home">Home</a><a href="#work">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <div class="nav-tools"><button class="tool-btn" id="share-btn" type="button" title="Share website">↗ <span>Share</span></button><button class="tool-btn" id="settings-btn" type="button" title="Website settings">⚙ <span>Settings</span></button><a class="nav-book" href="#booking">Book your slot ↗</a></div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">✳ VISUAL STORYTELLER · CREATIVE PORTFOLIO</p>
+    <h1>Every frame<br>has a <em>feeling.</em></h1>
+    <p class="intro">Capturing moments. Creating moods. Turning ordinary scenes into stories worth remembering.</p>
+    <div class="actions"><a class="button" href="#work">Explore my work ↗</a><a class="underlink" href="#booking">Book your slot <span>↗</span></a></div>
+    <p class="footnote">BASED IN INDIA　 —　 AVAILABLE FOR CREATIVE PROJECTS</p>
+  </div>
+  <div class="hero-art"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1100&q=85" alt="Golden hour landscape"><span class="photo-tag">THE ART OF SEEING · 01/04</span></div>
+</section>
+<div class="ticker">PHOTOGRAPHY　✳　VISUAL STORIES　✳　CREATIVE EDITING　✳　MOMENTS THAT MATTER　✳</div>
+<section class="section" id="work">
+  <div class="section-head"><div><p class="eyebrow">SELECTED MOMENTS / 2026</p><h2>My visual <em>diary.</em></h2></div><p class="muted">A collection of frames, places and little details that tell a bigger story.</p></div>
+  <div class="gallery">
+    <article class="tile tall"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85" alt="Mountain lake"><b>Beyond the horizon</b><small>01 — LANDSCAPES</small></article>
+    <article class="tile"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1000&q=85" alt="Forest landscape"><b>Quiet places</b><small>02 — NATURE</small></article>
+    <article class="tile"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1000&q=85" alt="Ocean waves"><b>Chasing the light</b><small>03 — DETAILS</small></article>
+    <article class="tile wide"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85" alt="Golden scenic view"><b>Somewhere in-between</b><small>04 — GOLDEN HOUR</small></article>
+  </div>
+</section>
+<section class="about section" id="about">
+  <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=1000&q=85" alt="Camera on a desk">
+  <div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Not just pictures.<br><em>Perspectives.</em></h2><p class="muted">I’m Jagadeesh — a creative enthusiast who loves finding beauty in everyday moments. This is where my eye for detail, curiosity and passion for visual storytelling come together.</p><p class="muted">From candid moments to cinematic moods, I believe the best stories are often found in the smallest details.</p></div>
+</section>
+<section class="booking section" id="booking">
+  <div><p class="eyebrow">LET'S CREATE SOMETHING</p><h2>Book your <em>slot.</em></h2><p class="muted">Have a shoot or creative project in mind? Send a booking request and let's plan it together.</p></div>
+  <div class="booking-details">
+    <div class="price-list">
+      <article class="price-card"><p class="eyebrow">REEL PACKAGE 01</p><h3>1 Reel</h3><strong>₹500</strong><small>One edited reel</small></article>
+      <article class="price-card featured"><p class="eyebrow">REEL PACKAGE 02</p><h3>2 Reels</h3><strong>₹800</strong><small>Two edited reels · Save ₹200</small></article>
+    </div>
+    <div class="payment-card">
+      <div><p class="eyebrow">QUICK PAYMENT</p><h3>Scan & Pay</h3><p class="muted">Scan this UPI QR code to make a payment.</p><p class="upi-id">UPI ID: 7793959945@ptyes</p></div>
+      <img class="payment-qr" src="payment-qr.jpeg" alt="UPI payment QR code for JAGADEESH.cliks">
+    </div>
+  </div>
+  <form id="booking-form">
+    <label>Your name<input name="name" required placeholder="Enter your name"></label>
+    <label>Phone / WhatsApp<input name="phone" required type="tel" placeholder="Your contact number"></label>
+    <label>What would you like to book?
+      <select name="service" required><option value="">Select a service</option><option>Photography</option><option>1 Reel — ₹500</option><option>2 Reels — ₹800</option><option>Creative editing</option><option>Other</option></select>
+    </label>
+    <div class="form-row"><label>Preferred date<input name="date" type="date" required></label><label>Preferred time<input name="time" type="time" required></label></div>
+    <label>Message (optional)<textarea name="message" rows="3" placeholder="Tell me a little about your idea"></textarea></label>
+    <button class="button submit" type="submit">Send booking request ↗</button>
+    <p class="form-note">Booking notifications are sent to kolaganivenkatajagadeesh11@gmail.com. Your slot is not confirmed until we reply.</p>
+    <p id="form-status" aria-live="polite"></p>
+  </form>
+</section>
+<section class="contact section" id="contact"><div><p class="eyebrow">HAVE A STORY IN MIND?</p><h2>Let's make it<br><em>memorable.</em></h2></div><div><p class="muted">For collaborations, creative projects or just to say hello — my inbox is open.</p><a class="button" href="mailto:kolaganivenkatajagadeesh11@gmail.com">Get in touch ↗</a><p class="social"><a href="https://instagram.com/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a>　 <a href="mailto:kolaganivenkatajagadeesh11@gmail.com">EMAIL ↗</a></p></div></section>
+</main>
+<dialog id="settings-dialog" class="settings-dialog">
+  <div class="dialog-head"><div><p class="eyebrow">PREFERENCES</p><h3>Website settings</h3></div><button id="close-settings" class="close-btn" aria-label="Close settings">×</button></div>
+  <p class="muted">JAGADEESH.cliks · Dark luxury · Black & Gold</p>
+  <label class="setting-row"><span>Reduce animations</span><input id="motion-setting" type="checkbox"></label>
+  <p class="settings-note">Your preference applies to this page while it is open.</p>
+</dialog>
+<footer><a class="brand" href="#home"><b>J<span>.</span></b> JAGADEESH<span class="gold">.cliks</span></a><small>© 2026 JAGADEESH.cliks — MADE WITH INTENTION.</small><a href="#home">BACK TO TOP ↑</a></footer>
+<script src="script.js"></script>
+</body></html>
